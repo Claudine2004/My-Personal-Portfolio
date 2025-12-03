@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claudine UWIZEYIMANA - Personal Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Sticky Header / Navigation -->
+    <header id="header">
+        <div class="container nav-container">
+            <h1 class="logo">Claudine UWIZEYIMANA</h1>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Home Section -->
+        <section id="home" class="hero-section">
+            <div class="container home-content">
+                <div class="text-content">
+                    <p class="greeting">Hello, I'm </p>
+                    <h2>Claudine UWIZEYIMANA</h2>
+                    <h3 class="title">Mobile Application Developer & Web Developer</h3>
+                    <p class="bio">
+                        A passionate individual with a strong foundation in data analysis and a growing expertise in web development. I transform complex data into actionable insights and build responsive, user-friendly web applications.
+                    </p>
+                    <a href="#contact" class="btn primary-btn">Get In Touch</a>
+                </div>
+                <div class="image-content">
+                    <img src="assets/12.jpg" alt="Your Name Profile Image" class="profile-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            My journey in tech started with a deep curiosity for data, leading me to the DSE Program. I believe in continuous learning and applying my analytical skills to create meaningful digital experiences.
+                        </p>
+                        <h3>Education</h3>
+                       
+            
+                            <strong>RP MUSANZE College</strong> - Advanced Diploma in Information Technology (Expected Graduation 2026)
+                        
+                    </div>
+                    <div class="skills-content">
+                        <h3>Skills & Proficiency</h3>
+                        <div class="skill-bar-container" data-skill="HTML & CSS" data-level="90">
+                            <p>HTML & CSS</p>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 0;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-container" data-skill="JavaScript (Vanilla)" data-level="80">
+                            <p>JavaScript (Vanilla)</p>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 0;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-container" data-skill="Python & Data Analysis" data-level="95">
+                            <p>Python & Data Analysis</p>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 0;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-container" data-skill="Responsive Design" data-level="85">
+                            <p>Responsive Design</p>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 0;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project Card 1 -->
+                    <div class="project-card" data-project-id="1">
+                        <img src="assets/asset.png" alt="Project 1 Thumbnail" class="project-thumbnail">
+                        <h3>Assets Management System</h3>
+                        <p class="short-desc">A web-based app that helps organizations track, manage, and maintain assets efficiently. It allows recording details, monitoring usage, scheduling maintenance, and generating reports to improve accountability and streamline processes.</p>
+                        <div class="card-actions">
+                            <a href="#" target="_blank" class="btn secondary-btn view-project-link">View Project</a>
+               
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="project-card" data-project-id="2">
+                        <img src="assets/project2.jpg" alt="Project 2 Thumbnail" class="project-thumbnail">
+                        <h3>eCare Appointments Management System</h3>
+                        <p class="short-desc"> A web app that lets patients book, reschedule, and cancel appointments online while helping staff manage schedules efficiently.</p>
+                        <div class="card-actions">
+                            <a href="#" target="_blank" class="btn secondary-btn view-project-link">View Project</a>
+
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3 -->
+                    <div class="project-card" data-project-id="3">
+                        <img src="assets/project3.jpg" alt="Project 3 Thumbnail" class="project-thumbnail">
+                        <h3>Students Attendance App</h3>
+                        <p class="short-desc">A web-based application that helps teachers and schools track student attendance easily. It allows marking daily attendance, generating reports, and monitoring attendance trends to improve student management and accountability.</p>
+                        <div class="card-actions">
+                            <a href="#" target="_blank" class="btn secondary-btn view-project-link">View Project</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 4. Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <form id="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required aria-describedby="name-error">
+                        <span class="error-message" id="name-error" aria-live="polite"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required aria-describedby="email-error">
+                        <span class="error-message" id="email-error" aria-live="polite"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required maxlength="500" aria-describedby="message-error"></textarea>
+                        <span class="char-count">500 characters remaining</span>
+                        <span class="error-message" id="message-error" aria-live="polite"></span>
+                    </div>
+                    <button type="submit" class="btn primary-btn submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Claudine. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Project Details Modal -->
+    <div id="project-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-content">
+            <button class="close-btn" aria-label="Close modal">&times;</button>
+            <h3 id="modal-title">Project Title</h3>
+            <div class="modal-body">
+                <img src="" alt="Project Screenshot" class="modal-screenshot">
+                <p class="modal-description">Detailed description of the project.</p>
+                <p class="modal-tech"><strong>Technology Used:</strong> HTML, CSS, JavaScript</p>
+                <a href="#" target="_blank" class="btn primary-btn modal-link">Live Demo</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification for Form Success -->
+    <div id="toast-notification" class="toast" aria-live="assertive" aria-atomic="true">
+        Message sent successfully! Thank you for reaching out.
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
